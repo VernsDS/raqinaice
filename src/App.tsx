@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import { MotionConfig } from "framer-motion"
+import { Analytics } from "@vercel/analytics/react"
 import Navbar from "@/components/Navbar"
 import Hero from "@/components/Hero"
 import Ticker from "@/components/Ticker"
@@ -52,6 +53,7 @@ export default function App() {
           <FinalCta />
         </main>
         <Footer />
+        <Analytics />
       </div>
     </MotionConfig>
   )
